@@ -2,11 +2,8 @@ const form = document.getElementById("form-number");
 let formEValido = false;
 
 function validaNumero(NumeroA) {
-    if (NumeroA >= NumeroB) {
-    return false;
-    } else {
-    return true;
-    }
+    const numeroComoArray = NumeroA.split ('<=');
+    return numeroComoArray.length <= 2;
 }
 
 form.addEventListener("submit", function(e) {
