@@ -1,7 +1,9 @@
+const form = document.getElementById("form-number");
+
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-const form = document.getElementById("form-number");
+
 var a = document.getElementById('number-a')
 var b = document.getElementById('number-b')
 var na = parseInt(a.value);
